@@ -1,0 +1,123 @@
+.gradient-background {
+    background: linear-gradient(300deg, #0066ff, #ff4c68, #72efac);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    border-radius: 20px;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.pagex {
+    height: auto;
+    padding: 60px 0px 40px 0px;
+    background-image: url('./images/nikapro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    color: white;
+}
+p {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+#login-main {
+    height: auto;
+    width: 30%;
+    background-color: #202020;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    padding: 30px 40px 30px 40px;
+}
+
+input {
+    color: white !important;
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+button {
+    width: 200px;
+}
+
+#social-grid {
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    gap: 20px;
+    grid-template-rows: auto;
+}
+
+.social {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(300deg, #0066ff, #ff4c68, #72efac);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@media (max-width: 992px) {
+    .pagex {
+        height: 100vh;
+    }
+    #login-main {
+        width: 70%;
+        padding: 60px 50px 60px 50px ;
+    }
+    h2 {
+        font-size: 4.5rem;
+    }
+    label {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+    hr {
+        width: 150px !important;
+    }
+    #mobilehr {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    button {
+        width: 350px;
+        height: 80px;
+        font-size: 2rem !important;
+    }
+    #divide {
+        padding: 60px 0px;
+    }
+    #social-grid {
+        display: grid;
+        grid-template-columns: 80px 80px 80px;
+        gap: 40px;
+        grid-template-rows: auto;
+    }
+    .social {
+        height: 80px;
+        width: 80px;
+    }
+    .social > svg {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    input {
+        height: 80px;
+        font-size: 2rem !important;
+    }
+}
